@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <title> OCYM PIRALASSERY</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Lumia
+  * Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+   
+</head>
+<body >
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+         <img src="assets/img/favicon.png">
+        <h1 class="sitename">ST GEORGE OCYM PIRALASSERY</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Upcoming Projects</a></li>
+          <li><a href="#portfolio">Executed Projects</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+  
+ <style>
+  
+   html {
+  scroll-padding-top: 100px; /* Equal or a bit more than your sticky header height */
+  scroll-behavior: smooth;
+}
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .hero-section {
+    width: 100vw; /* Full viewport width */
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slideshow-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  /* Optional: add fading animation manually if not using W3.CSS */
+  .fade-animate {
+    animation: fade 1.5s ease-in-out;
+  }
+
+  @keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+  }
+
+  /* Mobile height adjustments */
+  @media (max-width: 768px) {
+    .mySlides {
+      object-fit: contain !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .mySlides {
+      max-height: 200px;
+    }
+  }
+</style>
+
+  <main class="main">
+    <section id="hero" class="hero-section">
+  <div style="text-align: center; padding-top: 40px;">
+    <h1><b>WELCOME TO THE OFFICIAL WEBSITE OF OCYM PIRALASSERY</b></h1>
+  </div>
+
+  <div class="slideshow-wrapper">
+    <img class="mySlides fade-animate" src="assets/img/hero-bg-resized.jpg" alt="Slide 1" />
+    <img class="mySlides fade-animate" src="assets/img/IMG-20250203-WA0043.jpg" alt="Slide 2" />
+    <img class="mySlides fade-animate" src="assets/img/5.jpg" alt="Slide 3" />
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+  }
+</script>
+
+
+
+  
+
+
+    <!-- What We Do Section -->
+    
+<section id="about" class="about section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <h4><b>പിരളശ്ശേരി OCYM – വിശ്വാസത്തിലും സേവനത്തിലും ഒരുമിച്ചുള്ള യാത്ര</b></h4>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/favicon.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content ps-0 ps-lg-3">
+             
+
+<h5>പിരളശ്ശേരി OCYM (Orthodox Christian Youth Movement) എന്നത് മലങ്കര ഓർത്തഡോക്സ് സുറിയാനി സഭയുടെ യുവജനപ്രസ്ഥാനത്തിന്റെ ഭാഗമായി പ്രവർത്തിക്കുന്ന ഒരു സജീവ യൂണിറ്റാണ്. ST. ജോർജ് ഓർത്തഡോക്സ് കത്തോലിക്കേറ്റ് സിംഹാസന പള്ളിയിലാണ് ഈ യൂണിറ്റ് പ്രവർത്തിക്കുന്നത്.
+<br><br>
+യുവജനങ്ങളുടെ ആത്മീയ, ബൗദ്ധിക, സാംസ്കാരിക, സാമൂഹിക വളർച്ച ലക്ഷ്യമാക്കി വിവിധ പ്രവർത്തനങ്ങളാണ് പിരളശ്ശേരി OCYM സംഘടിപ്പിക്കുന്നത്. ആരാധനാ യോഗങ്ങൾ, ബൈബിൾ പഠനങ്ങൾ, സാമൂഹിക സേവനങ്ങൾ, സാംസ്കാരിക പരിപാടികൾ, കരുണാപദ്ധതികൾ എന്നിവയിലൂടെ ഈ യൂണിറ്റ് സജീവമായ ഇടപെടലുകൾ നടത്തുന്നു.
+<br><br>
+<b>"ആരാധനയും പഠനവും സേവനവും" </b>എന്ന പ്രമേയം ഉൾക്കൊണ്ടാണ് പിരളശ്ശേരി OCYM യാഥാർത്ഥ്യപ്പെടുന്നത്. സഭയോടും സമൂഹത്തോടും പ്രതിബദ്ധത പുലർത്തുന്ന, സ്നേഹപൂർണ്ണമായും ദൈവഭക്തിയുള്ളതുമായ യുവജനരെ സൃഷ്ടിക്കുകയാണ് പ്രധാന ലക്ഷ്യം.
+<br><br>
+ദൈവസാന്നിധ്യവും ആത്മീയതയും നിറഞ്ഞ ഒരു അനുഗ്രഹമായ അനുഭവം തന്നെയാണ് ഈ പ്രസ്ഥാനത്തിന്റെ ഭാഗമാകുന്നത് പിരളശ്ശേരി യുവജനങ്ങൾക്ക്.
+           </h5></div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    
+
+    <!-- Stats Section -->
+   
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2><b>UPCOMING PROJECTS</b></h2>
+        <h><b>"Coming soon: United in purpose, our upcoming projects are on the way!"
+
+          </b></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/IMG-20250604-WA0123.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><b>പള്ളിക്ക് മനോഹരമായ ഒരു തോട്ടം നിർമ്മിക്കാനാണ് ഈ പദ്ധതി ആവിഷ്ക്കരിച്ചത്.
+</b></h4>
+
+               
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+
+          
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Executed Projects</h2>
+        <h4><b>"Successful projects completed in faith and dedication."</b></h4>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/resized_IMG-20250613-WA0012.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><b>"St. George L.P. School വിദ്യാർത്ഥികൾക്ക് പഠനോപകരണങ്ങൾ വിതരണം ചെയ്തു."
+</b></h4>
+                
+                <a href="assets/img/IMG-20250604-WA0119.jpg" title="St. George L.P. School വിദ്യാർത്ഥികൾക്ക് പഠനോപകരണങ്ങൾ വിതരണം ചെയ്തു."
+" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/environment.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><b> ലോക പരിസ്ഥിതി ദിനം</b></h4>
+          
+                <a href="assets/img/IMG-20250608-WA0002.jpg" title=" ലോക പരിസ്ഥിതി ദിനത്തിന്റെ ഭാഗമായി പള്ളി വളപ്പിൽ ഒരു ചെടി നട്ടു." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/hd_resized_IMG-20250617-WA0018.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><b> FAREWELL TO OUR VICE PRESIDENT </b></h4>
+          
+                <a href="assets/img/IMG-20250615-WA0011.jpg" title=" 3 വർഷമായി ഞങ്ങളെ നയിച്ച ശേഷം അടുത്ത പള്ളിയിലേക്ക് സ്ഥലംമാറ്റം ചെയ്‌തുപോകുന്ന മോൻസി അച്ചന് യാത്രാമംഗളങ്ങൾ നേർന്ന് സെന്റ് ജോർജ് OCYM.
+" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/resized_IMG-20250620-WA0005.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><b> അഹമ്മദാബാദ് വിമാന അപകടത്തിൽ ജീവൻ നഷ്ടപ്പെട്ടവർക്ക് ആദരാഞ്ജലികൾ.</b></h4>
+          
+                <a href="assets/img/IMG-20250617-WA0009.jpg" title=" അഹമ്മദാബാദ് വിമാന അപകടത്തിൽ മരണപ്പെട്ടവർക്ക് സ്‌മരണാഞ്ജലികൾ.
+ആ ദാരുണ സംഭവത്തിൽ ജീവിതം നഷ്ടപ്പെട്ട ആത്മാക്കൾക്ക് വേണ്ടി പ്രാർത്ഥിച്ചു.
+ദുഃഖത്തിൽ ആയിരിക്കുന്ന കുടുംബങ്ങളുടെ വേദനയിൽ പങ്കുചേരുന്നു." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+
+    <!-- Team Section -->
+    <section class="team-15 team section" id="team">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+      </div><!-- End Section Title -->
+
+      <div class="content">
+        <div class="container">
+
+           <div class="row justify-content-center mb-4"> 
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/IMG-20250620-WA0034.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Fr Tino Thankachen</h3>
+                  <span class="position">PRESIDENT</span>
+                </div>
+              </div>
+            </div>
+             <div class="w-100"></div> 
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/biju.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                  
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Biju Alexander</h3>
+                  <span class="position">VICE PRESIDENT</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/feba.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                   
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Feba Mirium Mathews</h3>
+                  <span class="position">SECRETARY</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/sebin.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Sebin Philip</h3>
+                  <span class="position">JOIN SECRETARY</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/IMG-20250621-WA0006.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Anna K Joby</h3>
+                  <span class="position">JOIN SECRETARY</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/jithu.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Jithu Mathew Varghese</h3>
+                  <span class="position">TREASURE</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/jen.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3> Jennin Thomas</h3>
+                  <span class="position"> COMMITTEE MEMBER</span>
+                </div>
+              </div>
+            </div>
+             <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/Jiya.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Jiya Mary Philp</h3>
+                  <span class="position"> COMMITTEE MEMBER</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="person">
+                <figure>
+                  <img src="assets/img/josh.jpg" alt="Image" class="img-fluid">
+                  <div class="social">
+                    
+                  </div>
+                </figure>
+                <div class="person-contents">
+                  <h3>Josh Esho Santhosh</h3>
+                  <span class="position"> COMMITTEE MEMBER</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+   
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">OCYM PIRALASSERY</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+       <h6> Designed by Febin Tom Mathews</h6>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
